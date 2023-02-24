@@ -1,0 +1,258 @@
+:root {
+    --cor-titulo-noticias : #e9ab53;
+    --cor-fundo-botao : #f15e50;
+    --branco : #fffdfa;
+    --cor-texto : #c5c6ce;
+    --cinza-escuro : #4d4f64;
+    --preto : #00001a;
+    --font-principal : 'Inter', sans-serif;;
+}
+
+/*Menu*/
+
+.menu__hamburguer__botao{
+    background-color: transparent;
+    border: none;
+}
+
+.menu__lista__mobile{
+    background-color: var(--branco);
+    width: 65%;
+    overflow-y:hidden;
+    right: 0;
+    height: 100vh;
+    position: absolute;
+    color: var(--preto);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-principal);
+    color: var(--preto);
+    font-weight: 600;
+    display: none;
+    
+}
+
+#nav.active .menu__lista__mobile{
+    display: block;
+    
+}
+
+
+
+
+
+
+.menu__lista__item{
+    padding: 10px;
+    margin: 20px;
+    margin-top: 30px;
+
+}
+
+.container__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.menu__logo{
+    width: 45px;
+}
+
+
+.menu__hamburguer__img{
+    width: 40px;
+}
+
+.menu__lista__desktop{
+    display: none;
+}
+
+/*Banner*/
+
+.princpial__noticias{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    
+}
+
+.container__banner{
+    margin-top: 15px;
+}
+
+
+.banner__img{
+    background-image: url(../img/image-web-3-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 46vh;
+    width: 93%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.banner__descricao{
+    padding: 0 10px;
+    font-family: var(--font-principal);
+}
+
+.banner__titulo{
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.texto__banner{
+    margin-top: 20px;
+    color: var(--cinza-escuro);
+    line-height: 25px;
+}
+
+.banner__botao{
+    background-color: var(--cor-fundo-botao);
+    color: var(--branco);
+    text-decoration: none;
+    font-family: var(--font-principal);
+    font-size: 18px;
+    padding: 12px;
+    display: block;
+    width: 35%;
+    text-align: center;
+    margin-top: 22px;
+}
+
+/*Menu lateral*/
+
+.noticas__menu__lateral{
+    font-family: var(--font-principal);
+    background-color: var(--preto);
+    width: 94%;
+    margin-left: 10px;
+    display: block;
+    height: 70vh;
+    margin: 0 auto;
+}
+
+.noticias__titulo{
+    color: var(--cor-titulo-noticias);
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.noticiass__lista{
+    padding: 20px;
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    
+}
+
+.noticias__lista__item{
+    border-bottom: 0.3px solid var(--branco);
+  
+
+}
+
+.noticias__lista__item:nth-child(3){
+    border: none;
+}
+
+
+
+.noticias__lista__titulo{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 800;
+
+}
+
+.noticias__lista__texto{
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--cor-texto);
+    margin-bottom: 35px;
+    line-height: 25px;
+   
+}
+
+/*top noticias*/
+
+.top__noticias{
+    padding: 18px 0;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    
+
+}
+
+.top__noticias__lista{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+
+
+.top__noticias__item{
+    display: flex;
+    gap: 30px;
+    
+}
+
+
+
+
+.top__noticias__img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15vh;
+    margin-left: 5px;
+    
+}
+
+
+.um{
+    background-image: url(../img/image-retro-pcs.jpg);
+    width: 100px;
+}
+
+.dois {
+    background-image: url(../img/image-top-laptops.jpg);
+    width: 85px;
+}
+
+.tres{
+    background-image: url(../img/image-gaming-growth.jpg);
+    width: 100px;
+}  
+
+.top__noticias__descricao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: var(--font-principal);
+    padding: 5px;
+}
+
+.top__noticia__numero{
+    color: var(--cor-texto);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.top__noticias__titulo{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.top__noticias__texto{
+    color: var(--cinza-escuro);
+    line-height: 25px;
+}
+
